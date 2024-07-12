@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "654367980788",
+    "project_id": "barter-buddy-5f553",
+    "storage_bucket": "barter-buddy-5f553.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654367980788:android:b3988eca11ee8c585b32a1",
+        "android_client_info": {
+          "package_name": "com.example.barter_buddy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAspOZ2uHL0YiHev9I7if0naMIWRaZcJO8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
