@@ -1,4 +1,3 @@
-
 import 'package:firebase_auth/firebase_auth.dart';
 
 class AuthRepo {
@@ -12,11 +11,13 @@ class AuthRepo {
       return user;
     } on FirebaseAuthException catch (e) {
       if (e.code == 'weak-password') {
-        print('The password provided is too weak.');
+        throw Exception('The password provided is too weak.');
       } else if (e.code == 'email-already-in-use') {
-        print('The account already exists for that email.');
+        throw Exception('The account already exists for that email.');
       }
       return null;
+    } catch (e) {
+      throw Exception(e.toString());
     }
   }
 }
