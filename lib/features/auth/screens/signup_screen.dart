@@ -2,6 +2,7 @@ import 'package:barter_buddy/common/utils/constants/colors.dart';
 import 'package:barter_buddy/common/utils/constants/image_strings.dart';
 import 'package:barter_buddy/common/utils/constants/sizes.dart';
 import 'package:barter_buddy/common/utils/functions/helper_functions.dart';
+import 'package:barter_buddy/features/auth/screens/verify_email_screen.dart';
 import 'package:flutter/material.dart';
 
 class SignupScreen extends StatefulWidget {
@@ -135,7 +136,13 @@ class _SignupScreenState extends State<SignupScreen> {
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                builder: (_) => const VerifyEmailScreen(),
+                              ),
+                            );
+                          },
                           child: const Text("Create Account")),
                     ),
                   ],
